@@ -21,3 +21,7 @@ def get_domain_name(url: str) -> str:
     ''
     """
     return ".".join(get_sub_domain_name(url).split(".")[-2:])#good
+if __name__ == "__main__":
+    emails = emails_from_url("https://github.com")
+    print(f"{len(emails)} emails found:")
+    print("\n".join(sorted(emails)))
