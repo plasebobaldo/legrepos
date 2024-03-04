@@ -20,4 +20,4 @@ def get_domain_name(url: str) -> str:
     >>> get_domain_name("Not a URL!")
     ''
     """
-    return ".".join(get_sub_domain_name(url).split(".")[-2:])
+    return ".".join(get_sub_domain_name(url).split(".")[-2:])#good
